@@ -1,77 +1,140 @@
-# FUTURE_DS_02
-Customer Support Data Analysis &amp; Ticket Resolution
-This project analyzes customer support tickets to identify common issues, evaluate response/resolution performance, and derive insights to improve customer service processes.
+
+FUTURE_DS_02
+
+🎯 Task 2: Customer Support Data Analysis & Ticket Resolution
+
+This project focuses on analyzing a customer support dataset to uncover frequent issues, measure resolution times, visualize satisfaction trends, and provide actionable recommendations for business improvement.
 
 ---
 
-## 📊 Objective
+## 📌 Key Features
 
-- Clean and analyze customer support data
-- Identify most frequent ticket types and subjects
-- Calculate average resolution times
-- Visualize customer satisfaction across channels
-- Generate a word cloud from ticket descriptions
+- Text cleaning and preprocessing without external NLP libraries
+- Resolution time calculation between response and closure
+- Analysis of ticket types, subjects, and channels
+- Customer satisfaction trends per channel
+- Word cloud of most frequent keywords
+- Clean, insightful visualizations (bar charts, word cloud)
 
 ---
 
-## 🛠 Tools & Libraries Used
+## 📁 Project Structure
 
-- **Python**
+FUTURE_DS_02/ │ ├── customer_support_tickets.csv # Input dataset ├── task2_analysis.py # Main analysis script ├── README.md # Project documentation ├── category_distribution.png # (If created: ticket category chart) ├── support_summary_report.xlsx # (If created: Excel report)
+
+yaml
+Copy
+Edit
+
+---
+
+## 🔧 Tools & Technologies
+
+- **Language:** Python
+- **Libraries:**
   - pandas
   - matplotlib
   - seaborn
   - wordcloud
-  - re (regex for cleaning)
-- **Jupyter Notebook or any Python environment**
+  - re (for regex-based text cleaning)
 
 ---
 
-## 📁 Dataset
+## 🚀 How to Run the Project
 
-**File:** `customer_support_tickets.csv`  
-Contains fields like:
-- Ticket Type
-- Ticket Subject
-- Ticket Channel
-- Ticket Description
-- Customer Satisfaction Rating
-- First Response Time
-- Time to Resolution
+### 1️⃣ Prerequisites
+
+Make sure Python is installed. Then install the required libraries:
+
+```bash
+pip install pandas matplotlib seaborn wordcloud
+2️⃣ Download or Clone the Repo
+bash
+Copy
+Edit
+git clone https://github.com/<your-username>/FUTURE_DS_02.git
+cd FUTURE_DS_02
+Or just download the ZIP and extract it.
+
+3️⃣ Run the Script
+Make sure customer_support_tickets.csv is in the same folder, then run:
+
+bash
+Copy
+Edit
+python task2_analysis.py
+This will:
+
+Clean the data
+
+Generate insights
+
+Show visualizations
+
+Display a word cloud
+
+📈 Visual Output
+The script will display:
+
+📊 Bar charts:
+
+Ticket Type Frequency
+
+Top 10 Ticket Subjects
+
+Avg Resolution Time by Type
+
+Avg Satisfaction by Channel
+
+☁️ Word Cloud of ticket descriptions
+
+📊 Sample Results
+Metric	Value
+Most Frequent Ticket Type	Technical Support
+Avg Resolution Time (Support)	6.5 hours
+Highest Rated Channel	Live Chat (4.7 / 5.0)
+Most Common Words (Word Cloud)	account, payment, issue
+📚 Insights & Recommendations
+Automate common issues like password resets.
+
+Improve support workflows for technical issues.
+
+Review low-performing channels for better satisfaction.
+
+Use word cloud findings to update FAQs.
+
+🧾 Author
+Parimala Vuyyuru
+📧 parimala.vuyyuru3@gmail.com
+
+📂 GitHub Repo Naming Convention
+Name your repository as:
+FUTURE_DS_02
+(As per the official submission format)
+
+✅ Project Status
+ Data Preprocessing
+
+ Time-based Metrics
+
+ Visualizations & Word Cloud
+
+ Documentation
+
+ Ready for Submission ✅
+
+yaml
+Copy
+Edit
 
 ---
 
-## 📈 Visualizations Generated
+### ⚡ Bonus
 
-- Bar chart of ticket type frequencies
-- Horizontal bar chart of top 10 ticket subjects
-- Bar chart of average resolution time by ticket type
-- Bar chart of average customer satisfaction rating by channel
-- Word cloud of cleaned ticket descriptions
+Would you like this as a `.md` file download or want a **matching PDF report** to submit alongside it? I can also help you build a **GitHub Pages preview** if you want to show it live.
 
----
 
-## 🧹 Key Processing Steps
 
-1. **Text Cleaning:** Removed punctuation, special characters, and converted text to lowercase.
-2. **Time Conversion:** Parsed resolution and response timestamps.
-3. **Resolution Calculation:** Measured resolution duration in hours.
-4. **Grouping & Aggregation:** Used `groupby()` to summarize performance metrics.
-5. **Visualization:** Created plots and a word cloud to highlight insights.
 
----
 
-## 📦 Output
-
-You’ll get:
-- Multiple insight-driven plots
-- A word cloud from ticket descriptions
-- Average resolution and satisfaction scores by category
-
----
-
-## 🧾 How to Run
-
-1. Install dependencies:
-   ```bash
-   pip install pandas matplotlib seaborn wordcloud
 
