@@ -104,8 +104,8 @@ Review low-performing channels for better satisfaction.
 Use word cloud findings to update FAQs.
 
 🧾 Author
-Parimala Vuyyuru
-📧 parimala.vuyyuru3@gmail.com
+Varsha Ponduru
+📧 varshavrsec01@gmail.com
 
 📂 GitHub Repo Naming Convention
 Name your repository as:
